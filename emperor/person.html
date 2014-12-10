@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Person</title>
+<style>
+body {background: #ddd; font-family: Helvetica, Arial, san-serif; padding: 0 25px 25px 25px;}
+h1 {text-align: center;}
+h2, h3 {margin: 0 0 10px 0;}
+.portrait {width: 40px; height: 55px; margin: 2px; border: solid 2px #333;}
+.birth {background: #aae; width: 920px; padding: 20px; border-top-left-radius: 10px; border-top-right-radius: 10px;}
+.birth p {text-indent:15px;}
+.marriage {background: #aae; width: 920px; padding: 20px;}
+.marriage p {text-indent:15px;}
+.death {background: #aae; width: 920px; padding: 20px;}
+.death p {text-indent:15px;}
+.burial {background: #aae; width: 920px; padding: 20px; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;}
+.burial p {text-indent:15px;}
+.siblings {background: #fff; width: 860px; padding: 20px; -webkit-box-shadow: inset 4px 4px 6px rgba(0,0,0, 0.6); margin: 15px auto; border-radius: 10px;}
+.siblings p {text-indent:15px;}
+.ancestors {background: #fff; width: 860px; padding: 20px; -webkit-box-shadow: inset 4px 4px 6px rgba(0,0,0, 0.6); margin: 15px auto; border-radius: 10px;}
+.ancestor p {text-indent:15px;}
+.children {background: #fff; width: 860px; padding: 20px; -webkit-box-shadow: inset 4px 4px 6px rgba(0,0,0, 0.6); margin: 15px auto; border-radius: 10px;}
+.children p {text-indent:15px;}
+
+div.emperor-pedigree { border: solid 7px #eee; padding: 15px; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; }
+div.emperor-pedigree + p { margin-top: 2em; text-shadow: black 1px 1px 1px; }
+
+#content {width: 960px; -webkit-box-shadow: 4px 4px 6px rgba(0,0,0, 0.6); border-radius: 10px; margin: 0 auto;}
+#asideRight {float: right; width: 320px; padding: 20px;}
+</style>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+<script src="emperor.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<h1>Smith, John</h1>
+
+<div id="content">
+	
+	<div class="birth">
+	
+	<div class="ancestors">
+	<h2>Ancestors</h2>
+	<div class="emperor-pedigree">
+		- <img class="portrait" src="gandhi.jpg"/> John Smith | b. ?
+		-- <img class="portrait" src="gandhi.jpg"/> Jed Smith | b. ?
+		--- <img class="portrait" src="gandhi.jpg"/> Charles Smith | b. ?
+		--- <img class="portrait" src="gandhi.jpg"/> Emily George | b. ?
+		-- <img class="portrait" src="gandhi.jpg"/> Sarah Thompson | b. ?
+		--- <img class="portrait" src="gandhi.jpg"/> | b. ?
+		--- <img class="portrait" src="gandhi.jpg"/> | b. ?
+		---- <img class="portrait" src="gandhi.jpg"/> | b. ?
+		---- <img class="portrait" src="gandhi.jpg"/> | b. ?
+		
+	</div>
+</div>
+	
+	<h2>Birth Event</h2>
+		<h3>Date</h3>
+		<p>YYYY-MM-DD</p>
+		<h3>Place</h3>
+		<p>City/Township, County/Region, Province/State, Country</p>
+		
+	<div class="siblings">
+	<h2>Siblings</h2>
+	<img class="portrait" src="gandhi.jpg"/>
+	<img class="portrait" src="gandhi.jpg"/>
+	<img class="portrait" src="gandhi.jpg"/>
+	<img class="portrait" src="gandhi.jpg"/>
+	<img class="portrait" src="gandhi.jpg"/>
+	<img class="portrait" src="gandhi.jpg"/>
+	<img class="portrait" src="gandhi.jpg"/>
+	<img class="portrait" src="gandhi.jpg"/>
+	<img class="portrait" src="gandhi.jpg"/>
+	<img class="portrait" src="gandhi.jpg"/>
+	</div>
+		
+	</div>
+	
+	<div class="marriage">
+	<h2>Marriage Event</h2>
+		<h3>Date</h3>
+		<p>YYYY-MM-DD</p>
+		<h3>Place</h3>
+		<p>City/Township, County/Region, Province/State, Country</p>
+		
+	<div class="children">
+	<h2>Children</h2>
+	<img class="portrait" src="gandhi.jpg"/>
+	<img class="portrait" src="gandhi.jpg"/>
+	<img class="portrait" src="gandhi.jpg"/>
+	<img class="portrait" src="gandhi.jpg"/>
+	<img class="portrait" src="gandhi.jpg"/>
+	<img class="portrait" src="gandhi.jpg"/>
+	<img class="portrait" src="gandhi.jpg"/>
+	<img class="portrait" src="gandhi.jpg"/>
+	<img class="portrait" src="gandhi.jpg"/>
+	<img class="portrait" src="gandhi.jpg"/>
+	</div>
+		
+	</div>
+
+	<div class="death">
+	<h2>Death Event</h2>
+		<h3>Date</h3>
+		<p>YYYY-MM-DD</p>
+		<h3>Place</h3>
+		<p>City/Township, County/Region, Province/State, Country</p>
+	</div>
+
+	<div class="burial">
+	<h2>Burial Event</h2>
+		<h3>Date</h3>
+		<p>YYYY-MM-DD</p>
+		<h3>Place</h3>
+		<p>City/Township, County/Region, Province/State, Country</p>
+	</div>
+</div>
+</body>
+</html>

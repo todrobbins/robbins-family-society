@@ -1,0 +1,65 @@
+html {
+	font-size: 18px;
+	background: #fff url(../images/snow.png);
+}
+
+body {
+	font-family: Baskerville, Garamond, Georgia, serif;
+	margin: 0 auto;
+	padding: 2em 4em;
+	max-width: 50em;
+	min-width: 20em;
+}
+
+h1,h2,h3,h4,h5,h6 { font-family: Futura, Arial, sans-serif; }
+h1 {
+	font-size: 2.2em;
+	font-weight: lighter;
+	color: rgba(200,0,0,.9);
+	text-shadow: 0px 1px 1px #fff,
+				 0px 1px 3px #800000;
+}
+h2 { font-size: 1.8em; }
+h3 { font-size: 1.4em; margin-top: 0; }
+
+article {
+	padding: 2em;
+	background: rgba(255,0,0,.1);
+	max-width: 44em;
+}
+
+article p {
+	font-size: 1.2em;
+	max-width: 40em;
+	line-height: 1.3em;
+}
+
+a:link, a:active, a:visited {
+	color: rgba(200,0,0,1);
+	text-decoration: none;
+}
+
+a:link:hover, a:active:hover, a:visited:hover {
+	text-decoration: underline;
+}
+
+.byline {
+	font-style: italic;
+	border-bottom: 1px dashed rgba(255,0,0,.4);
+	padding-bottom: .8em;
+}
+
+@media and screen (max-width: 640px) {
+	
+	body {
+		max-width: 90%;
+	}
+
+	article {
+		padding: .6em;
+	}
+
+	article p {
+		/*font-size: 2em;*/
+	}
+}
